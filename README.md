@@ -1,4 +1,4 @@
-# Code
+#Code
 ```java
 import java.util.Scanner;
 public class StaffincomeReport{
@@ -48,8 +48,8 @@ class Income{
         totalTax = (tax/100)*amount;
         return totalTax;
     }
-}
 
+}
 class Staff{
     private String name;
     private String id;
@@ -70,19 +70,19 @@ class Staff{
         return income.getAmount()-income.getTotalTax();
     }
     void displayStaffInfo(){
+        System.out.println("\nStaff Info:");
         System.out.println("Name : " + name);
         System.out.println("ID : " + id);
     }
     void displayIncomeInfo(){
+        System.out.println("\nIncome Info:");
         System.out.println("Income type: "+income.getIncomeType());
-        System.out.println("Income amount : RM"+income.getAmount());
-        System.out.println("Income tax : "+income.getTax()+"%");
-        System.out.println("Total income tax : RM"+income.getTotalTax());
-        System.out.println("Total net income : RM"+calculateNetIncome());
+        System.out.printf("Income amount : RM"+"%.2f",income.getAmount());
+        System.out.println("\nIncome tax : "+income.getTax()+"%");
+        System.out.printf("Total income tax : RM"+"%.2f",income.getTotalTax());
+        System.out.printf("\nTotal net income : RM"+"%.2f",calculateNetIncome());
     }
 }
 ```
 ## Output
-![image](https://user-images.githubusercontent.com/55395418/76524176-9676be80-64a4-11ea-81e5-a55986f61363.png)
-
-
+![image](https://user-images.githubusercontent.com/55395418/76526661-d93a9580-64a8-11ea-87a0-b254243daf28.png)

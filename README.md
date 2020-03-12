@@ -1,4 +1,5 @@
-#Code
+# Code
+
 ```java
 import java.util.Scanner;
 public class StaffincomeReport{
